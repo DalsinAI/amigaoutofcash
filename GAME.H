@@ -14,6 +14,13 @@
 //Screen
 #define RES_X  320
 #define RES_Y  240
+
+//savegame file names (slot 1 to SAVEGAME_SLOTS)
+#ifdef __amigaos__
+    #define SAVEGAME_NAME "User/savegame.00%i"     //GFOS: the player's files in the drawer's User drawer
+#else
+    #define SAVEGAME_NAME "savegame.00%i"
+#endif
 #define C_X    (RES_X >> 1)
 #define C_Y    (HUD_Y >> 1)
 

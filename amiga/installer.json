@@ -1,0 +1,16 @@
+{
+  "name": "OutOfCash",
+  "version": "1.4-gfos1",
+  "drawer": "OutOfCash",
+  "program": "OutOfCash",
+  "cpu": "68040",
+  "fpu": false,
+  "space": 9000000,
+  "modules": [],
+  "keep": [
+    "User"
+  ],
+  "parent": "Work:Games",
+  "badge": "icons/art/outofcash.png",
+  "script": "Install-OutOfCash"
+}

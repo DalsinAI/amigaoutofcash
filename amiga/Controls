@@ -1,0 +1,24 @@
+Out of Cash: controls
+=====================
+
+The game is played with the mouse, as a classic point and click
+adventure (it is in Spanish). From the author's Manual.txt:
+
+  Left button    in the room: do the chosen verb on what the pointer is
+                 over, or skip a line someone is saying
+                 in a conversation: pick a line
+                 on the verbs: choose a verb
+                 on the inventory arrows: page up and down
+                 on the inventory: do the verb on that object
+  Right button   in the room: the object's own verb, or back to GO TO
+                 on the verbs: back to GO TO
+                 on the inventory arrows: first or last page
+                 on the inventory: that object's own verb
+  Double click   with GO TO, walk faster
+  Esc            the menu: save, load, options, restart, quit
+  Space          pause
+
+The verbs from the keyboard:
+  Q GO TO (IR)        W LOOK (MIRAR)     E OPEN (ABRIR)
+  A PICK UP (COGER)   S USE (USAR)       D CLOSE (CERRAR)
+  Z MOVE (MOVER)      X GIVE (DAR)       C TALK (HABLAR)

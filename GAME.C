@@ -219,7 +219,9 @@ int main()
 void main_init()
 {
     //set env var trace log file
+    #ifndef __amigaos__
     setenv("ALLEGRO_TRACE", "GAME.LOG", 1);
+    #endif
 
     TRACE("Outcash (Sin blanca) version %i.%i\n", MAJOR_VERSION, MINOR_VERSION);
     TRACE("Initializing systems and modules\n");
@@ -802,10 +804,10 @@ bool game_save_exists(uint8_t slot, char *s)
 {
     FILE* saveFile;
     struct savegame savegame;
-    char filename[13];
+    char filename[24];
 
     //compose filenae
-    sprintf(filename, "savegame.00%i", (slot + 1));
+    sprintf(filename, SAVEGAME_NAME, (slot + 1));
     //open/create the savegame file
     saveFile = fopen(filename, "rb");
     if (!saveFile)
@@ -860,10 +862,10 @@ void game_save(uint8_t slot)
 {
     FILE* saveFile;
     struct savegame savegame;
-    char filename[13];
+    char filename[24];
 
     //compose filenae
-    sprintf(filename, "savegame.00%i", (slot + 1));
+    sprintf(filename, SAVEGAME_NAME, (slot + 1));
     //open/create the savegame file
     saveFile = fopen(filename, "wb");
     if (!saveFile)
@@ -903,10 +905,10 @@ void game_load(uint8_t slot)
 {
     FILE* loadFile;
     struct savegame savegame;
-    char filename[13];
+    char filename[24];
 
     //compose filenae
-    sprintf(filename, "savegame.00%i", slot + 1);
+    sprintf(filename, SAVEGAME_NAME, slot + 1);
     //open savegame file
     loadFile = fopen(filename, "rb");
     if (!loadFile)

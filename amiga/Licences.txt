@@ -1,0 +1,19 @@
+Out of Cash: licences
+=====================
+
+The game: Out of Cash (Sin blanca), (c) 2025-2026 Warcom Soft.
+(warrior-rockk), from github.com/warrior-rockk/out-of-cash at commit
+8dd5c620197f4b2f40666a35693f2ab34215d865 (version 1.4, Spanish).
+
+- The game, its code and its data: GNU General Public License version 3
+  (COPYING.txt). The port's changes to the code (GAME.C, GAME.H) are under
+  it too; the source of this build is in DalsinAI/amigaoutofcash on GitHub.
+- Libs/allegro4.library (DalsinAI/gfopenallegro) and Libs/acgame.library
+  (DalsinAI/acgame): MIT, Copyright (c) 2026 AmiCradle Team. They are our
+  own Allegro 4 and game libraries, not Allegro's code.
+- The Amiga port's own files (amiga/, AMIGA_PORT.md, package/, tools/
+  lha_archive.py, pack_dist.py and write_part.sh, tests/) are GPL-3 or
+  later like the game, Copyright (c) 2026 AmiCradle Team. The GlowIcons
+  are drawn from the hero's own sprite in the game's data.
+
+Designed, tested and delivered by The AmiCradle Team.
